@@ -121,6 +121,20 @@ public struct FloorFilter: View {
         viewModel.onViewpointChanged(viewpoint)
     }
     
+        //MP
+    public func setSite(newSite: FloorSite) {
+        viewModel.setSite(newSite)
+    }
+    
+    public func setFacility(newFacility: FloorFacility) {
+        viewModel.setFacility(newFacility)
+    }
+    
+    public func setLevel(newLevel: FloorLevel) {
+        viewModel.setLevel(newLevel)
+    }
+    //MP
+
     /// A view that allows selecting between levels.
     @ViewBuilder private var levelSelector: some View {
         LevelSelector(
